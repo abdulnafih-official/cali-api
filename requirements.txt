@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]>=2.0
+asyncpg
+pydantic-settings
+pydantic[email]
+pyjwt
+bcrypt
+python-multipart
+huggingface_hub
+joblib
+scikit-learn
+numpy
