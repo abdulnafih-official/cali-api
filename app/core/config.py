@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60
     hf_repo_id: str
     hf_filename: str = "model.joblib"
+    hf_token: str | None = None
 
     model_config = SettingsConfigDict(env_file=".env")
 
