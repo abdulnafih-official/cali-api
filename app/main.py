@@ -14,6 +14,6 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="California House Price API", lifespan=lifespan)
+app = FastAPI(title="California House Price API", lifespan=lifespan,version="1.0.0", description="An API for predicting house prices in California using FastAPI and SQLAlchemy.")
 app.include_router(auth.router)
 app.include_router(predict.router)
